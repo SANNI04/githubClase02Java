@@ -1,3 +1,6 @@
+/* Programa que lea dos variables enteras N y m y le quite a N sus m últimas
+cifras.
+Por ejemplo, si N = 123456 y m = 2 el nuevo valor de N será 1234 */
 package co.edu.utp.misiontic2022.c2;
 import java.util.Scanner;
 public class eje3 {

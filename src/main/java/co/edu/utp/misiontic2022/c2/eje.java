@@ -1,3 +1,6 @@
+/*. Programa que calcule el precio de venta de un producto conociendo el precio
+por unidad (sin IVA) del producto, el número de productos vendidos y el
+porcentaje de IVA aplicado. Los datos anteriores se leerán por teclado */
 package co.edu.utp.misiontic2022.c2;
 
 import java.util.Scanner;
@@ -22,23 +25,22 @@ public class eje {
     //CON UNA FUNCIÓN:
 
     
-    System.out.println("Ingrese la cantidad de productos vendidos: ");
-    int cantidad=sc.nextInt();
-    System.out.println("Ingrese el precio del producto sin iva por unidad: ");
-    float preSinIva=sc.nextFloat();
-    System.out.println("Ingrese el valor del iva que se va a aplicar: ");
-    int iva = sc.nextInt();
+        System.out.println("Ingrese la cantidad de productos vendidos: ");
+        int cantidad=sc.nextInt();
+        System.out.println("Ingrese el precio del producto sin iva por unidad: ");
+        float preSinIva=sc.nextFloat();
+        System.out.println("Ingrese el valor del iva que se va a aplicar: ");
+        int iva = sc.nextInt();
       
         float precioConIva= calculateconIVA(preSinIva, iva,cantidad);
 
-    System.out.println("Cantidad de productos vendidos: "+cantidad);
-    System.out.println("Porcentaje de iva aplicado: "+iva);
-    System.out.println("Precio venta c/u: "+precioConIva);
+        System.out.println("Cantidad de productos vendidos: "+cantidad);
+        System.out.println("Porcentaje de iva aplicado: "+iva);
+        System.out.println("Precio venta c/u: "+precioConIva);
  sc.close();    
 }
 
     public static float calculateconIVA (float preSinIva,int iva,int cantidad) {
-
 
         float precioConIva=preSinIva+preSinIva*iva/100; 
         //float precioTotalIva = precioConIva*cantidad;
